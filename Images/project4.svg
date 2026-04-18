@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080818"/>
+      <stop offset="100%" style="stop-color:#0d1220"/>
+    </linearGradient>
+    <filter id="gf4"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg4)"/>
+  <circle cx="400" cy="225" r="180" fill="#ff9900" opacity="0.04" filter="url(#gf4)"/>
+  <!-- Department table -->
+  <rect x="80" y="110" width="190" height="180" rx="6" fill="#0d1525" stroke="#ff9900" stroke-width="2"/>
+  <rect x="80" y="110" width="190" height="36" rx="6" fill="#ff9900" opacity="0.15"/>
+  <rect x="80" y="110" width="190" height="36" rx="0" ry="0"/>
+  <rect x="80" y="110" width="190" height="36" rx="6" fill="#ff9900" opacity="0.2"/>
+  <text x="175" y="134" text-anchor="middle" fill="#ff9900" font-family="monospace" font-size="13" font-weight="bold">DEPARTMENT</text>
+  <line x1="80" y1="146" x2="270" y2="146" stroke="#ff9900" stroke-width="1" opacity="0.5"/>
+  <text x="95" y="168" fill="#ffddaa" font-family="monospace" font-size="12">🔑 dept_id (PK)</text>
+  <text x="95" y="188" fill="#aabbcc" font-family="monospace" font-size="12">dept_name</text>
+  <text x="95" y="208" fill="#aabbcc" font-family="monospace" font-size="12">location</text>
+  <text x="95" y="228" fill="#aabbcc" font-family="monospace" font-size="12">manager_id</text>
+  <text x="95" y="248" fill="#aabbcc" font-family="monospace" font-size="12">budget</text>
+  <text x="95" y="268" fill="#aabbcc" font-family="monospace" font-size="12">created_at</text>
+  <!-- Employee table -->
+  <rect x="530" y="80" width="190" height="240" rx="6" fill="#0d1525" stroke="#00aaff" stroke-width="2"/>
+  <rect x="530" y="80" width="190" height="36" rx="6" fill="#00aaff" opacity="0.2"/>
+  <text x="625" y="104" text-anchor="middle" fill="#00aaff" font-family="monospace" font-size="13" font-weight="bold">EMPLOYEE</text>
+  <line x1="530" y1="116" x2="720" y2="116" stroke="#00aaff" stroke-width="1" opacity="0.5"/>
+  <text x="545" y="138" fill="#ffddaa" font-family="monospace" font-size="12">🔑 emp_id (PK)</text>
+  <text x="545" y="158" fill="#aabbcc" font-family="monospace" font-size="12">first_name</text>
+  <text x="545" y="178" fill="#aabbcc" font-family="monospace" font-size="12">last_name</text>
+  <text x="545" y="198" fill="#aabbcc" font-family="monospace" font-size="12">email</text>
+  <text x="545" y="218" fill="#aabbcc" font-family="monospace" font-size="12">salary</text>
+  <text x="545" y="238" fill="#ffaa44" font-family="monospace" font-size="12">🔗 dept_id (FK)</text>
+  <text x="545" y="258" fill="#aabbcc" font-family="monospace" font-size="12">hire_date</text>
+  <text x="545" y="278" fill="#aabbcc" font-family="monospace" font-size="12">position</text>
+  <text x="545" y="298" fill="#aabbcc" font-family="monospace" font-size="12">status</text>
+  <!-- relation line -->
+  <line x1="270" y1="196" x2="380" y2="196" stroke="#ff9900" stroke-width="2" opacity="0.7"/>
+  <line x1="380" y1="196" x2="380" y2="238" stroke="#ff9900" stroke-width="2" opacity="0.7"/>
+  <line x1="380" y1="238" x2="530" y2="238" stroke="#ff9900" stroke-width="2" opacity="0.7"/>
+  <!-- cardinality labels -->
+  <text x="280" y="188" fill="#ff9900" font-family="monospace" font-size="16" font-weight="bold">1</text>
+  <text x="510" y="230" fill="#ff9900" font-family="monospace" font-size="16" font-weight="bold">N</text>
+  <text x="320" y="215" fill="#ff9900" font-family="monospace" font-size="11">has many</text>
+  <!-- MySQL logo text -->
+  <text x="175" y="360" text-anchor="middle" fill="#ff9900" font-family="monospace" font-size="14" opacity="0.8">MySQL</text>
+  <text x="625" y="380" text-anchor="middle" fill="#00aaff" font-family="monospace" font-size="11" opacity="0.6">Normalized • Constrained</text>
+  <!-- title -->
+  <text x="400" y="415" text-anchor="middle" fill="white" font-family="monospace" font-size="20" font-weight="bold">MySQL ERD Design</text>
+  <text x="400" y="435" text-anchor="middle" fill="#ff9900" font-family="monospace" font-size="12" opacity="0.7">Entity Relationship Diagram</text>
+</svg>
